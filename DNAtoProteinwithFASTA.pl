@@ -11,10 +11,10 @@ my @file_data = (  );
 my $dna = '';
 my $protein = '';
 
-# Read in the contents of the file "sample.dna"
+# Read in the contents of the file "DNA.txt"
 @file_data = get_file_data("DNA.txt");
 
-# Extract the sequence data from the contents of the file "sample.dna"
+# Extract the sequence data from the contents of the file "DNA.txt"
 $dna = extract_sequence_from_fasta_data(@file_data);
 
 # Translate the DNA to protein
@@ -115,7 +115,6 @@ sub dna2peptide {
 
     use strict;
     use warnings;
-    #  use BeginPerlBioinfo;     # see Chapter 6 about this module
 
     # Initialize variables
     my $protein = '';
